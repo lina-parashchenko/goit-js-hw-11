@@ -8,7 +8,7 @@ const form = document.querySelector(".form");
 const loader = document.querySelector("#loader");
 
 
-const spinner = new Spinner({ color: "#333", lines: 12, width: 4, radius: 14 });
+const spinner = new Spinner({ color: "red", lines: 12, width: 8, radius: 14 });
 
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
