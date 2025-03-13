@@ -5,7 +5,7 @@ import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
 const form = document.querySelector(".form");
-const loader = document.querySelector("#loader");
+const loader = document.querySelector(".loader");
 
 
 const spinner = new Spinner({ color: "red", lines: 12, width: 8, radius: 14 });
@@ -22,6 +22,8 @@ form.addEventListener("submit", async (event) => {
     });
     return;
   }
+
+document.querySelector(".gallery").innerHTML = "";
 
   loader.classList.remove("hidden"); 
   spinner.spin(loader); 
